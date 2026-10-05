@@ -56,7 +56,7 @@ The repository is `hannahcamwork-dot/hannahcamwork-dot.github.io`, so the site i
 
 ## Design notes
 
-- **Toolkit logos.** QuickBooks, Intuit (for ProFile) and SAP marks come from Simple Icons v16.34.0 and are inlined as monochrome SVGs (copies in `assets/icons/tools/`). Microsoft, Adobe and Tableau marks aren't available there, and UFile has none, so those tools use a typographic file-type label instead of a redrawn logo.
+- **Toolkit logos.** Small full-colour marks stored in `assets/icons/tools/`: QuickBooks and Intuit (for ProFile) from Simple Icons v16.34.0 (CC0) in their brand colours; Excel, Word and Outlook from vscode-icons (MIT); Tableau, Adobe and SAP from SVG Logos (CC0). They are used only to name software she has worked with. UFile has no freely available mark, so it keeps a typographic "T1" label.
 
 - **Type.** Source Serif 4 for headings, figures and reflective text; IBM Plex Sans for body, labels and data. Both load from Google Fonts with system fallbacks.
 - **Colour.** Baby-blue paper `#e4eef8`, navy ink `#12213a`, one blue accent `#24508f`, slate `#4b5b74` for secondary text. Tax sections and the T1 workflow sit on a navy field (`#13284a`) with faint ledger ruling. All text meets WCAG AA contrast.
