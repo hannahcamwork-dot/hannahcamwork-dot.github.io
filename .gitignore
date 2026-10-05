@@ -1,0 +1,9 @@
+# Source documents stay local. The .docx also holds cover-letter drafts.
+*.docx
+~$*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
