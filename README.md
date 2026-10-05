@@ -14,6 +14,7 @@ A static personal site for Hannah Cam, accounting student at Ontario Tech Univer
 ├── resume.html         Contact details, PDF links, text version of the résumé
 ├── contact.html        Email, LinkedIn, location
 ├── 404.html            GitHub Pages "not found" page
+├── robots.txt / sitemap.xml
 ├── assets/
 │   ├── documents/      Hannah-Cam-Resume.pdf
 │   ├── icons/          favicon.svg, favicon-32.png, apple-touch-icon.png
@@ -39,12 +40,9 @@ Every path is relative, so the site works at a user site root (`username.github.
 
 The original `.docx` résumé is excluded by `.gitignore`. It also contains cover-letter drafts and should stay off the public repository.
 
-### After the URL is known
+### Live address
 
-Social previews (LinkedIn, iMessage, Slack) need absolute URLs. Once the site is live, on each page:
-
-- change `<meta property="og:image" content="assets/images/og-image.png">` to the full URL, e.g. `https://username.github.io/assets/images/og-image.png`
-- add `<link rel="canonical" href="https://username.github.io/page.html">` and `<meta property="og:url" content="…">`
+The repository is `hannahcamwork-dot/hannahcamwork-dot.github.io`, so the site is served at https://hannahcamwork-dot.github.io/. Canonical links, `og:url`, `og:image`, `robots.txt` and `sitemap.xml` all use that address. If the repository is ever renamed or moved to a custom domain, update those.
 
 ## Updating content
 

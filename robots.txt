@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hannahcamwork-dot.github.io/sitemap.xml
