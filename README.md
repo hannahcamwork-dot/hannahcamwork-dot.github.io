@@ -56,8 +56,10 @@ The repository is `hannahcamwork-dot/hannahcamwork-dot.github.io`, so the site i
 
 ## Design notes
 
-- **Type.** Newsreader (editorial serif) for headings, figures and longer reflective text; IBM Plex Sans for body, labels and data. Both load from Google Fonts with system fallbacks.
-- **Colour.** Ink `#1b1917`, paper `#f4efe5`, oxblood `#6e2c2c` as the single accent, stone `#645e55` for secondary text. Tax sections sit on a deeper oxblood field (`#5b2424`) with faint ledger ruling, which makes tax the one strong colour moment on the site. All text meets WCAG AA contrast.
+- **Toolkit logos.** QuickBooks, Intuit (for ProFile) and SAP marks come from Simple Icons v16.34.0 and are inlined as monochrome SVGs (copies in `assets/icons/tools/`). Microsoft, Adobe and Tableau marks aren't available there, and UFile has none, so those tools use a typographic file-type label instead of a redrawn logo.
+
+- **Type.** Source Serif 4 for headings, figures and reflective text; IBM Plex Sans for body, labels and data. Both load from Google Fonts with system fallbacks.
+- **Colour.** Baby-blue paper `#e4eef8`, navy ink `#12213a`, one blue accent `#24508f`, slate `#4b5b74` for secondary text. Tax sections and the T1 workflow sit on a navy field (`#13284a`) with faint ledger ruling. All text meets WCAG AA contrast.
 - **Details.** Numbered section markers in the left rail, thin rules, double rules where a statement would underline a total, a hand-tally chart (one mark per return), CRA line references on the tax page, footnotes for where software was used, and an "Exhibit" treatment for the T1 workflow.
 - **Motion.** Subtle fade-and-rise on load and on scroll, plus underline and arrow transitions. All of it is disabled under `prefers-reduced-motion`, and content is fully visible without JavaScript.
 - **Accessibility.** Semantic landmarks and heading order, skip link, visible focus states, keyboard-operable menu (Escape closes it; the page behind it becomes inert), and labelled external links.

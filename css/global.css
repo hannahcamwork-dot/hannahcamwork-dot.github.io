@@ -65,18 +65,18 @@ a {
 }
 
 a:hover {
-  color: var(--oxblood);
+  color: var(--accent);
   text-decoration-color: currentColor;
 }
 
 :focus-visible {
-  outline: 2px solid var(--oxblood);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 1px;
 }
 
 ::selection {
-  background: var(--oxblood);
+  background: var(--accent);
   color: var(--paper);
 }
 
@@ -225,7 +225,7 @@ main > :last-child:not(.band) {
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
-  color: var(--oxblood);
+  color: var(--accent);
   font-variant-numeric: lining-nums;
 }
 
@@ -245,7 +245,7 @@ main > :last-child:not(.band) {
   display: inline-block;
   width: 1.75rem;
   height: 1px;
-  background: var(--oxblood);
+  background: var(--accent);
   opacity: 0.6;
 }
 
@@ -401,7 +401,7 @@ main > :last-child:not(.band) {
 }
 
 .site-nav a[aria-current="page"] {
-  color: var(--oxblood);
+  color: var(--accent);
 }
 
 .site-nav__num {
@@ -488,7 +488,7 @@ main > :last-child:not(.band) {
   }
 
   .js .site-nav a[aria-current="page"] {
-    color: var(--oxblood);
+    color: var(--accent);
   }
 
   .js .site-nav__num {
