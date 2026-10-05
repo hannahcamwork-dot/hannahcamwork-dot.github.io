@@ -6,11 +6,12 @@ A static personal site for Hannah Cam, accounting student at Ontario Tech Univer
 
 ```
 /
-├── index.html          Home
-├── about.html          About, context, direction
+├── index.html          Home: headline, portrait, tax band, why tax, approach, summaries
+├── tax.html            Filing seasons, tax items worked on, T1 workflow
 ├── experience.html     Work experience timeline and leadership
-├── work.html           Tax experience, T1 workflow, three case studies
+├── work.html           Four mini case studies (problem → what I did → result)
 ├── education.html      Degree, coursework, frameworks, software, languages
+├── about.html          About, context, direction
 ├── resume.html         Contact details, PDF links, text version of the résumé
 ├── contact.html        Email, LinkedIn, location
 ├── 404.html            GitHub Pages "not found" page
@@ -18,7 +19,7 @@ A static personal site for Hannah Cam, accounting student at Ontario Tech Univer
 ├── assets/
 │   ├── documents/      Hannah-Cam-Resume.pdf
 │   ├── icons/          favicon.svg, favicon-32.png, apple-touch-icon.png
-│   └── images/         og-image.png (social share preview, 1200×630)
+│   └── images/         og-image.png (social share preview, 1200×630); put hannah-cam.jpg here
 ├── css/
 │   ├── reset.css       Minimal reset
 │   ├── variables.css   Colours, type scale, spacing, motion tokens
@@ -46,16 +47,18 @@ The repository is `hannahcamwork-dot/hannahcamwork-dot.github.io`, so the site i
 
 ## Updating content
 
+- **Portrait.** The homepage hero has a photo placeholder. Save a 4:5 portrait (at least 960 × 1200 px) as `assets/images/hannah-cam.jpg`, then in `index.html` replace the `<div class="portrait__placeholder" …>…</div>` with `<img src="assets/images/hannah-cam.jpg" alt="Hannah Cam" width="960" height="1200">`. The comment above the placeholder has the exact line.
 - **Résumé PDF.** Export page 1 of the résumé from Word (File → Save As → PDF, pages 1 to 1) and replace `assets/documents/Hannah-Cam-Resume.pdf`, keeping the same filename. Then update the text version in `resume.html` to match.
-- **Header and footer.** These are repeated in each HTML file (there is no build step). If you change a navigation link or the footer, update all seven pages.
-- **Availability.** "Winter or Summer 2027 co-op" appears in `index.html` (hero facts and contact band), `about.html` and `contact.html`.
+- **Header and footer.** These are repeated in each HTML file (there is no build step). If you change a navigation link or the footer, update all eight pages.
+- **Availability.** "Winter or Summer 2027 co-op" appears in `index.html` (hero facts and closing section), `about.html` and `contact.html`.
+- **Tally chart.** The 400 marks in the homepage tax band are an inline SVG (80 groups of five). If the headline number changes, regenerate or edit the `<use>` elements.
 - **Copyright year.** In the footer of each page.
 
 ## Design notes
 
 - **Type.** Newsreader (editorial serif) for headings, figures and longer reflective text; IBM Plex Sans for body, labels and data. Both load from Google Fonts with system fallbacks.
-- **Colour.** Ink `#1b1917`, paper `#f4efe5`, oxblood `#6e2c2c` as the single accent, stone `#645e55` for secondary text. All text meets WCAG AA contrast.
-- **Details.** Section indices in the left rail, thin rules, a double rule under the figures strip (the way totals are underlined in a statement), footnotes for where software was used, and an "Exhibit" treatment for the T1 workflow.
+- **Colour.** Ink `#1b1917`, paper `#f4efe5`, oxblood `#6e2c2c` as the single accent, stone `#645e55` for secondary text. Tax sections sit on a deeper oxblood field (`#5b2424`) with faint ledger ruling, which makes tax the one strong colour moment on the site. All text meets WCAG AA contrast.
+- **Details.** Numbered section markers in the left rail, thin rules, double rules where a statement would underline a total, a hand-tally chart (one mark per return), CRA line references on the tax page, footnotes for where software was used, and an "Exhibit" treatment for the T1 workflow.
 - **Motion.** Subtle fade-and-rise on load and on scroll, plus underline and arrow transitions. All of it is disabled under `prefers-reduced-motion`, and content is fully visible without JavaScript.
 - **Accessibility.** Semantic landmarks and heading order, skip link, visible focus states, keyboard-operable menu (Escape closes it; the page behind it becomes inert), and labelled external links.
 

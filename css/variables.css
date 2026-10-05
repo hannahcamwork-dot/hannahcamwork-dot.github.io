@@ -15,11 +15,12 @@
   --stone-light: #9a958b;  /* decorative only */
   --rule: #d6cebf;
 
-  /* On the dark (ink) bands */
-  --on-ink: #f4efe5;
-  --on-ink-muted: #b9b2a5;
-  --on-ink-accent: #c9938d;
-  --rule-on-ink: #45403a;
+  /* Tax bands (oxblood field) */
+  --tax-bg: #5b2424;
+  --on-tax: #f4efe5;        /* 10.6:1 */
+  --on-tax-muted: #dcc4bc;  /* 7.4:1 */
+  --on-tax-accent: #e8c9a0; /* 7.7:1 */
+  --rule-on-tax: #7a4642;   /* decorative only */
 
   /* Type */
   --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;

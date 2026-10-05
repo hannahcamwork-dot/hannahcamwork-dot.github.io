@@ -11,7 +11,7 @@
   var nav = document.getElementById("site-nav");
   var label = toggle ? toggle.querySelector(".nav-toggle__label") : null;
   var behind = document.querySelectorAll("main, .site-footer");
-  var mobile = window.matchMedia("(max-width: 53.75em)");
+  var mobile = window.matchMedia("(max-width: 64em)");
 
   function setOpen(open) {
     if (!toggle || !nav) return;
