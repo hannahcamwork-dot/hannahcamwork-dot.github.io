@@ -404,10 +404,6 @@ main > :last-child:not(.band) {
   color: var(--accent);
 }
 
-.site-nav__num {
-  display: none;
-}
-
 .nav-toggle {
   display: none;
 }
@@ -491,15 +487,6 @@ main > :last-child:not(.band) {
     color: var(--accent);
   }
 
-  .js .site-nav__num {
-    display: inline-block;
-    min-width: 2rem;
-    font-family: var(--sans);
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    color: var(--stone);
-  }
 
   .js .nav-toggle {
     display: inline-flex;
