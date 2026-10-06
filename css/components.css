@@ -1742,30 +1742,51 @@
   object-fit: cover;
 }
 
+/* Narrow screens: keep the photo beside the name, smaller */
 @media (max-width: 53.75em) {
+  .intro__grid {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: 1fr auto;
+    row-gap: 0;
+  }
+
+  .intro__name {
+    align-self: end;
+  }
+
   .intro__main {
+    display: contents;
+  }
+
+  .intro__main > * {
     grid-column: 1 / -1;
   }
 
-  .intro .headshot {
-    grid-column: 1 / -1;
+  .intro__main > .intro__name,
+  .intro__main > .intro__role {
+    grid-column: 1;
+  }
+
+  .intro__name {
     grid-row: 1;
-    width: min(15rem, 70%);
-    margin: 0;
+  }
+
+  .intro__role {
+    grid-row: 2;
+  }
+
+  .intro .headshot {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: clamp(6.5rem, 28vw, 11rem);
+    margin: 0 0 0 1rem;
   }
 }
 
 /* Co-op, under the intro */
 
-.seek {
-  margin-top: clamp(2.25rem, 4vw, 3rem);
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--ink);
-}
-
-.seek__title {
-  font-size: 1.5rem;
-  line-height: 1.2;
+.intro__text--next {
+  margin-top: 1em;
 }
 
 .part {
@@ -2140,4 +2161,13 @@
     grid-template-columns: 1fr;
     row-gap: 0.15rem;
   }
+}
+/* Education page: minor sits close under the degree */
+.page-head__lede--minor {
+  margin-top: 0;
+  font-style: italic;
+  color: var(--accent);
+}
+.page-head__title--degree {
+  max-width: 24ch;
 }
