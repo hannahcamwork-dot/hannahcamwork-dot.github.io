@@ -1718,8 +1718,54 @@
   color: var(--stone);
 }
 
-.intro__line--place {
-  margin-top: 0.25rem;
+.intro__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--col-gap);
+  row-gap: 2rem;
+  align-items: start;
+}
+
+.intro__main {
+  grid-column: 1 / span 7;
+}
+
+.intro .headshot {
+  grid-column: 9 / -1;
+  margin: 0.5rem 0 0;
+}
+
+.headshot img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+@media (max-width: 53.75em) {
+  .intro__main {
+    grid-column: 1 / -1;
+  }
+
+  .intro .headshot {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: min(15rem, 70%);
+    margin: 0;
+  }
+}
+
+/* Co-op, under the intro */
+
+.seek {
+  margin-top: clamp(2.25rem, 4vw, 3rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ink);
+}
+
+.seek__title {
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 
 .part {
@@ -1784,29 +1830,8 @@
   margin-top: 1em;
 }
 
-.headshot {
-  float: right;
-  width: 11rem;
-  margin: 0.35rem 0 1rem 2.5rem;
-}
-
-.headshot img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-}
-
-@media (max-width: 40em) {
-  .headshot {
-    float: none;
-    width: 8rem;
-    margin: 0 0 1.25rem;
-  }
-}
-
 .edu {
-  clear: both;
+
   margin-top: 2rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--rule);
@@ -2064,15 +2089,12 @@
   }
 }
 
-/* Co-op / contact */
-
-.part--contact .part__body {
-  border-top-color: var(--ink);
-}
+/* Co-op links */
 
 .seek__areas {
+  margin-top: 0.6rem;
   font-family: var(--serif);
-  font-size: clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem);
+  font-size: clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem);
   line-height: 1.3;
   color: var(--ink);
 }
@@ -2083,7 +2105,7 @@
 }
 
 .seek__links {
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   max-width: 34rem;
 }
 
@@ -2112,11 +2134,7 @@
   overflow-wrap: anywhere;
 }
 
-@media (max-width: 53.75em) {
-  .part--contact .part__body {
-    border-top: 0;
-  }
-}
+
 @media (max-width: 30em) {
   .seek__links li {
     grid-template-columns: 1fr;

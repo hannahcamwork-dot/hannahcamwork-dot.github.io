@@ -3,24 +3,24 @@
 :root {
   color-scheme: light;
 
-  /* Colour: warm paper, charcoal ink, one oxblood accent */
-  --ink: #1b1917;
-  --ink-soft: #3b3732;
-  --paper: #f4efe5;
-  --paper-deep: #ece5d7;
-  --paper-light: #faf7f1;
-  --accent: #6e2c2c;        /* oxblood, AA on paper */
-  --accent-deep: #561f20;
-  --stone: #645e55;         /* small text on paper, AA */
-  --stone-light: #9a958b;   /* decorative only */
-  --rule: #d6cebf;
+  /* Colour: pale blue-grey paper, navy ink, one steel-blue accent */
+  --ink: #14233b;
+  --ink-soft: #2f3d53;
+  --paper: #edf2f7;
+  --paper-deep: #e0e8f1;
+  --paper-light: #f6f9fc;
+  --accent: #2e5687;        /* ~6.9:1 on paper */
+  --accent-deep: #22426b;
+  --stone: #4f5e73;         /* small text on paper, ~6:1 */
+  --stone-light: #93a1b4;   /* decorative only */
+  --rule: #cfd9e5;
 
-  /* Tax bands (oxblood field, inner pages) */
-  --tax-bg: #5b2424;
-  --on-tax: #f4efe5;        /* 10.6:1 */
-  --on-tax-muted: #dcc4bc;  /* 7.4:1 */
-  --on-tax-accent: #e8c9a0; /* 7.7:1 */
-  --rule-on-tax: #7a4642;   /* decorative only */
+  /* Tax bands (navy field, inner pages) */
+  --tax-bg: #1a2e4d;
+  --on-tax: #f2f6fa;        /* ~13:1 */
+  --on-tax-muted: #bccbdd;  /* ~8:1 */
+  --on-tax-accent: #a9c8e8; /* ~8:1 */
+  --rule-on-tax: #34496b;   /* decorative only */
 
   /* Type */
   --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
